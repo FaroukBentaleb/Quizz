@@ -5,20 +5,34 @@ function loadOptions(i){
     fetch('../Quizz.json')
     .then((response) => response.json())
     .then((json) => {
-        const football = json.football;
-        const foot = football["Q"+i];
-        console.log(foot.question);
-        document.getElementById("container").innerHTML = "<h2>" + foot.question + "</h2><span>" + i + "/10 Question</span>";
+        let data;
+        switch(localStorage.getItem("opt")){
+            case "football":{
+                data = json.football;
+                break;
+            }
+            case "IT":{
+                data = json.IT;
+                break;
+            }
+            case "lol":{
+                data = json.lol;
+                break;
+            }
+        }
+        const seg = data["Q"+i];
+        console.log(seg.question);
+        document.getElementById("container").innerHTML = "<h2>" + seg.question + "</h2><span>" + i + "/10 Question</span>";
         let j=1;
-        for(ans in foot.answers){
+        for(ans in seg.answers){
             document.getElementById("container").innerHTML +=
             `<label onclick='checkAnswer(` + j + `,this)'>
                 <input type="radio" name="inventor" value="bell">
-                <span class="truncate">` + foot.answers[ans] + `</span>
+                <span class="truncate">` + seg.answers[ans] + `</span>
             </label>`;
             j++;
         }
-        localStorage.setItem("correct", foot.correct);
+        localStorage.setItem("correct", seg.correct);
         if(i<10){   
             document.getElementById("container").innerHTML+= "<button id='next-btn' class='disable' onclick='loadOptions(" + Number(i+1) + ")' disabled>Next</button>"; 
 

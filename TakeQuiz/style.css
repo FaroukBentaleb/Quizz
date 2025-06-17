@@ -27,6 +27,8 @@ body {
 		color var(--trans-dur);
 }
 .content {
+	display: block;
+
 	margin: auto;
 	max-width: 20em;
 	position: relative;

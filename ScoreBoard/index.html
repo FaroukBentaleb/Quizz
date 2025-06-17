@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="loadData()">
+    <div class="container">
+        <h1>Scoreboard</h1>
+        <div class="leaderboard">
+        <h2>⚽ Football Quiz</h2>
+        <ul id="football">
+            <li><span>No data found</span> - 95%</li>
+        </ul>
+        </div>
+        <div class="leaderboard">
+        <h2>🎮 LOL Quiz</h2>
+        <ul id="LOL">
+            <li><span>1. John Doe</span> - 95%</li>
+        </ul>
+        </div>
+        <div class="leaderboard">
+        <h2>💻 IT Quiz</h2>
+        <ul id="IT">
+            <li><span>1. John Doe</span> - 95%</li>
+        </ul>
+        </div>
+        <div class="btn-div">
+            <button class="btn" onclick="ClearHistory()">Clear history</button>
+            <button class="btn" onclick="Home()">Back Home</button>
+        </div>
+    </div>
+  <script src="index.js"></script>
+</body>
+</html>

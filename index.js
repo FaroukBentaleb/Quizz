@@ -11,5 +11,9 @@ function start(index){
             page = "IT";
             break;
     }
-    window.location.href= page;
+    localStorage.setItem("opt",page);
+    window.location.href= "TakeQuiz";
+}
+function scoreBoard(){
+    window.location.href= "ScoreBoard";
 }
