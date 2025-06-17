@@ -18,15 +18,15 @@ function loadData(){
             let date = DateTime.toDateString();
             switch(option){
                 case "football":
-                    document.getElementById("football").innerHTML+= `<li> Score: <span> ${Score} </span> | Date: <span> ${date} </span></li>`;
+                    document.getElementById("football").innerHTML+= `<li> Score: <span> ${Score*10} </span> | Date: <span> ${date} </span></li>`;
                     ftb++;
                     break;
                 case "lol":
-                    document.getElementById("LOL").innerHTML+= `<li> Score: <span> ${Score} </span> | Date: <span> ${date} </span></li>`;
+                    document.getElementById("LOL").innerHTML+= `<li> Score: <span> ${Score*10} </span> | Date: <span> ${date} </span></li>`;
                     lol++;
                     break;
                 case "IT":
-                    document.getElementById("IT").innerHTML+= `<li> Score: <span> ${Score} </span> | Date: <span> ${date} </span></li>`;
+                    document.getElementById("IT").innerHTML+= `<li> Score: <span> ${Score*10} </span> | Date: <span> ${date} </span></li>`;
                     it++;
                     break;
             }
