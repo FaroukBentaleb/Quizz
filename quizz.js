@@ -25,7 +25,7 @@ function loadOptions(i){
         let j=1;
         for(let ans in seg.answers){
             document.getElementById("container").innerHTML +=
-            `<label>
+            `<label class="inputs">
                 <input type="radio" name="inventor" value="bell" onclick='checkAnswer(${j},this.parentElement)'>
                 <span class="truncate">` + seg.answers[ans] + `</span>
             </label>`;
@@ -33,14 +33,13 @@ function loadOptions(i){
         }
         localStorage.setItem("correct", seg.correct);
         if(i<10){   
-            document.getElementById("container").innerHTML+= "<button id='next-btn' class='disable' onclick='loadOptions(" + Number(i+1) + ")' disabled>Next</button>"; 
+            document.getElementById("container").innerHTML+= "<button id='next-btn' class='disable' onclick='loadOptions(" + Number(i+1) + ")' disabled>➡️ Next</button>"; 
 
         }
         else{
-            document.getElementById("container").innerHTML+= "<button id='submit-btn' onclick='Submit()' class='disable' disabled>Submit</button>";  
+            document.getElementById("container").innerHTML+= "<button id='submit-btn' onclick='Submit()' class='disable' disabled>✅ Submit</button>";  
         }
-        document.getElementById("container").innerHTML+= "<button onclick='Home()'>Back Home</button>";
-        scoreDisplay(Number(localStorage.getItem('score'))*100/10);
+        document.getElementById("container").innerHTML+= "<button onclick='Home()'>🏠 Back Home</button>";
     });
 }
 function checkAnswer(index,thiss){
@@ -62,6 +61,11 @@ function checkAnswer(index,thiss){
     else{   
         thiss.classList.add("incorrect");
     }
+    document.getElementsByName("inventor").forEach((input) => {
+        input.disabled = true;
+    });
+    let inpts = document.getElementsByClassName("inputs");
+    inpts[Number(localStorage.getItem("correct"))-1].classList.add("correct");
 }
 function Submit(){
     if(!localStorage.getItem("History")){
@@ -72,13 +76,22 @@ function Submit(){
     let history = JSON.parse(localStorage.getItem("History"));
     history.push(item);
     localStorage.setItem("History",JSON.stringify(history));
-    Home();
+    Score();
 }
 function Home(){
     window.location.href="../";
 }
-
-
+function Score(){
+    document.getElementById("container").innerHTML = 
+    `<div class="new_container">
+        <h1>Final score</h1>
+        <br>
+        <div class="rating" style="width: 200px;height: 200px;">100</div>
+            <button style="background-color:grey;" onclick = "loadOptions(1)">🔄 Play Again</button>
+            <button onclick = "Home()">🏠 Back Home</button>
+    </div>`;
+    scoreDisplay(Number(localStorage.getItem('score'))*100/10);
+}
 
 function scoreDisplay(ratingScore){
     const ratings = document.querySelectorAll(".rating");

@@ -21,19 +21,37 @@ input {
 body {
 	background-color: var(--bg);
 	display: flex;
+	flex-direction: row;
+	justify-content: center;
 	height: 100vh;
 	transition:
 		background-color var(--trans-dur),
 		color var(--trans-dur);
 }
-.content {
+.content{
 	display: block;
-
 	margin: auto;
 	max-width: 20em;
 	position: relative;
 	width: 100%;
 }
+.new_container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 10px;
+	max-width: 20em;
+	position: relative;
+	width: 100%;
+	align-items: center;
+} 
+.btn-div{
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	gap: 10%;
+}
+
 label,
 input[type="radio"] {
 	cursor: pointer;
@@ -197,4 +215,9 @@ button:focus {
 }
 .disable{
 	background-color:grey;
+}
+
+.no-hover:hover {
+    background: none !important;
+    color: inherit !important;
 }
