@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="buttons.css">
+    <title>Quizz Time</title>
+</head>
+<body>
+    <h1>Quizz Game</h1>
+    <div class="content">
+        <div class="quizz" onclick="start(1)">
+            <div class="container">
+                <h2>⚽ Football Quiz</h2>
+                <p>For people who yell at millionaires running after a ball</p>
+                <b><u>Press to start</u></b>
+            </div>
+        </div>
+        <div class="quizz" onclick="start(2)">
+            <div class="container">
+                <h2>🎮 League of legends</h2>
+                <p>Where friendship ends and flaming begins</p>
+                <b><u>Press to start</u></b>
+            </div>
+        </div>
+        <div class="quizz" onclick="start(3)">
+            <div class="container">
+                <h2>💻 IT Quiz</h2>
+                <p>Because turning it off and on again only gets you so far.</p>
+                <b><u>Press to start</u></b>
+            </div>
+        </div>
+    </div>
+    <button class="pushable">
+        <span class="shadow"></span>
+        <span class="edge"></span>
+        <span class="front"> 📊 Score History </span>
+    </button>
+    <script src="index.js"></script>
+</body>
+</html>

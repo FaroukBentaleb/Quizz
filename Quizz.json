@@ -1,0 +1,310 @@
+{
+  "football": {
+    "Q1": {
+      "question": "How many players are there in a football team on the field?",
+      "answers": {
+        "1": "10",
+        "2": "11",
+        "3": "12",
+        "4": "13"
+      },
+      "correct": "2"
+    },
+    "Q2": {
+      "question": "Who won the FIFA World Cup in 2018?",
+      "answers": {
+        "1": "Germany",
+        "2": "Brazil",
+        "3": "France",
+        "4": "Croatia"
+      },
+      "correct": "3"
+    },
+    "Q3": {
+      "question": "Which player has won the most Ballon d’Or titles?",
+      "answers": {
+        "1": "Cristiano Ronaldo",
+        "2": "Messi",
+        "3": "Zidane",
+        "4": "Ronaldinho"
+      },
+      "correct": "2"
+    },
+    "Q4": {
+      "question": "Which country hosted the 2022 World Cup?",
+      "answers": {
+        "1": "Russia",
+        "2": "USA",
+        "3": "Qatar",
+        "4": "South Africa"
+      },
+      "correct": "3"
+    },
+    "Q5": {
+      "question": "What is the standard length of a football match (not including extra time)?",
+      "answers": {
+        "1": "80 minutes",
+        "2": "90 minutes",
+        "3": "100 minutes",
+        "4": "70 minutes"
+      },
+      "correct": "2"
+    },
+    "Q6": {
+      "question": "Which club is known as “The Red Devils”?",
+      "answers": {
+        "1": "Arsenal",
+        "2": "Manchester City",
+        "3": "Manchester United",
+        "4": "Liverpool"
+      },
+      "correct": "3"
+    },
+    "Q7": {
+      "question": "What is the maximum number of substitutions allowed in regular play (as of 2023)?",
+      "answers": {
+        "1": "3",
+        "2": "4",
+        "3": "5",
+        "4": "6"
+      },
+      "correct": "3"
+    },
+    "Q8": {
+      "question": "Which position is responsible for preventing the opposing team from scoring?",
+      "answers": {
+        "1": "Midfielder",
+        "2": "Goalkeeper",
+        "3": "Striker",
+        "4": "Winger"
+      },
+      "correct": "2"
+    },
+    "Q9": {
+      "question": "Which African country won the 2021 Africa Cup of Nations?",
+      "answers": {
+        "1": "Senegal",
+        "2": "Egypt",
+        "3": "Nigeria",
+        "4": "Algeria"
+      },
+      "correct": "1"
+    },
+    "Q10": {
+      "question": "Which team has won the most UEFA Champions League titles?",
+      "answers": {
+        "1": "AC Milan",
+        "2": "Bayern Munich",
+        "3": "Barcelona",
+        "4": "Real Madrid"
+      },
+      "correct": "4"
+    }
+  },
+
+  "lol": {
+    "Q1": {
+      "question": "What is the maximum level a champion can reach in a game?",
+      "answers": {
+        "1": "16",
+        "2": "18",
+        "3": "20",
+        "4": "25"
+      },
+      "correct": "2"
+    },
+    "Q2": {
+      "question": "Which champion is known as 'The Sinister Blade'?",
+      "answers": {
+        "1": "Katarina",
+        "2": "Evelynn",
+        "3": "Akali",
+        "4": "LeBlanc"
+      },
+      "correct": "1"
+    },
+    "Q3": {
+      "question": "What type of champion is Malphite primarily classified as?",
+      "answers": {
+        "1": "Assassin",
+        "2": "Mage",
+        "3": "Tank",
+        "4": "Support"
+      },
+      "correct": "3"
+    },
+    "Q4": {
+      "question": "Which dragon gives bonus attack damage and ability power?",
+      "answers": {
+        "1": "Ocean",
+        "2": "Infernal",
+        "3": "Cloud",
+        "4": "Mountain"
+      },
+      "correct": "2"
+    },
+    "Q5": {
+      "question": "Which item grants a spell shield that blocks the next ability?",
+      "answers": {
+        "1": "Banshee’s Veil",
+        "2": "Zhonya’s Hourglass",
+        "3": "Redemption",
+        "4": "Spirit Visage"
+      },
+      "correct": "1"
+    },
+    "Q6": {
+      "question": "What region does Jhin come from?",
+      "answers": {
+        "1": "Ionia",
+        "2": "Noxus",
+        "3": "Piltover",
+        "4": "Zaun"
+      },
+      "correct": "1"
+    },
+    "Q7": {
+      "question": "Which champion transforms between a hammer and a cannon?",
+      "answers": {
+        "1": "Jayce",
+        "2": "Rumble",
+        "3": "Gnar",
+        "4": "Kayn"
+      },
+      "correct": "1"
+    },
+    "Q8": {
+      "question": "How much gold is awarded for the first blood kill?",
+      "answers": {
+        "1": "300",
+        "2": "400",
+        "3": "500",
+        "4": "600"
+      },
+      "correct": "2"
+    },
+    "Q9": {
+      "question": "Which champion uses 'Whirling Death' as an ultimate?",
+      "answers": {
+        "1": "Draven",
+        "2": "Darius",
+        "3": "Tryndamere",
+        "4": "Zed"
+      },
+      "correct": "1"
+    },
+    "Q10": {
+      "question": "Which item is NOT a mythic item?",
+      "answers": {
+        "1": "Kraken Slayer",
+        "2": "Divine Sunderer",
+        "3": "Infinity Edge",
+        "4": "Night Harvester"
+      },
+      "correct": "3"
+    }
+  },
+
+  "IT": {
+    "Q1": {
+      "question": "What does 'HTTP' stand for?",
+      "answers": {
+        "1": "Hyperlink Transfer Protocol",
+        "2": "HyperText Transfer Protocol",
+        "3": "Hyper Tool Text Program",
+        "4": "High Tech Transfer Process"
+      },
+      "correct": "2"
+    },
+    "Q2": {
+      "question": "Which programming language is known for web development and runs in the browser?",
+      "answers": {
+        "1": "Java",
+        "2": "C++",
+        "3": "JavaScript",
+        "4": "Python"
+      },
+      "correct": "3"
+    },
+    "Q3": {
+      "question": "What is the main function of an operating system?",
+      "answers": {
+        "1": "Edit documents",
+        "2": "Manage computer hardware & software",
+        "3": "Play games",
+        "4": "Compile code"
+      },
+      "correct": "2"
+    },
+    "Q4": {
+      "question": "Which of the following is NOT a type of database?",
+      "answers": {
+        "1": "MySQL",
+        "2": "Oracle",
+        "3": "HTML",
+        "4": "PostgreSQL"
+      },
+      "correct": "3"
+    },
+    "Q5": {
+      "question": "What does 'IP' stand for in IP address?",
+      "answers": {
+        "1": "Internal Protocol",
+        "2": "Internet Program",
+        "3": "Internet Protocol",
+        "4": "Internal Processing"
+      },
+      "correct": "3"
+    },
+    "Q6": {
+      "question": "What is the binary equivalent of the number 10?",
+      "answers": {
+        "1": "1010",
+        "2": "1111",
+        "3": "1100",
+        "4": "1001"
+      },
+      "correct": "1"
+    },
+    "Q7": {
+      "question": "Which company developed the Windows OS?",
+      "answers": {
+        "1": "Apple",
+        "2": "Google",
+        "3": "Microsoft",
+        "4": "Intel"
+      },
+      "correct": "3"
+    },
+    "Q8": {
+      "question": "Which device is used to convert digital signals to analog?",
+      "answers": {
+        "1": "Router",
+        "2": "Modem",
+        "3": "Switch",
+        "4": "Hub"
+      },
+      "correct": "2"
+    },
+    "Q9": {
+      "question": "Which of these is a version control system?",
+      "answers": {
+        "1": "Git",
+        "2": "Node.js",
+        "3": "Apache",
+        "4": "Java"
+      },
+      "correct": "1"
+    },
+    "Q10": {
+      "question": "What does CSS stand for?",
+      "answers": {
+        "1": "Cascading Style Sheets",
+        "2": "Computer Style System",
+        "3": "Control Sheet Styles",
+        "4": "Cascaded Syntax Script"
+      },
+      "correct": "1"
+    }
+  }
+}
